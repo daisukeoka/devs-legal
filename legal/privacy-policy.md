@@ -1,6 +1,6 @@
 # プライバシーポリシー
 
-最終更新日: 2026年5月12日
+最終更新日: 2026年6月4日
 
 DeVS（以下「本アプリ」）をご利用いただきありがとうございます。本プライバシーポリシーは、本アプリにおける情報の取り扱いについて説明するものです。
 
@@ -40,12 +40,12 @@ DeVS（以下「本アプリ」）をご利用いただきありがとうござ�
 
 | 情報 | 保存場所 |
 |------|----------|
-| ディスカッション履歴 | 端末内のみ（AsyncStorage） |
+| ディスカッション履歴 | 端末内（AsyncStorage）。設定画面で「iCloud 同期」を有効化した場合、Apple iCloud のプライベートデータベース（CloudKit）にも保存されます |
 | アプリ設定 | 端末内のみ（AsyncStorage） |
-| カスタムエージェント | 端末内のみ（AsyncStorage） |
+| カスタムエージェント | 端末内（AsyncStorage）。設定画面で「iCloud 同期」を有効化した場合、Apple iCloud のプライベートデータベース（CloudKit）にも保存されます |
 | 利用回数 | 端末内のみ（AsyncStorage） |
 
-当社は独自のサーバーにユーザーの個人データを保存しません。
+当社は独自のサーバーにユーザーの個人データを保存しません。「iCloud 同期」はオプション機能であり、初期状態では無効です。同期を有効化した場合のデータの取り扱いは Apple のプライバシーポリシーに従います。
 
 ## 3. 第三者サービス
 
@@ -58,6 +58,7 @@ DeVS（以下「本アプリ」）をご利用いただきありがとうござ�
 | Supabase | API通信の中継 | https://supabase.com/privacy |
 | Apple In-App Purchase | サブスクリプション・チケット課金処理 | https://www.apple.com/legal/privacy/ |
 | RevenueCat | 課金状態管理・レシート検証 | https://www.revenuecat.com/privacy |
+| Apple iCloud (CloudKit) | ディスカッション履歴・カスタムエージェントの装置間同期（任意機能・ユーザーが設定画面で有効化した場合のみ） | https://www.apple.com/legal/privacy/ |
 
 ## 4. 子どものプライバシー
 
@@ -106,7 +107,7 @@ EU一般データ保護規則（GDPR）に基づき、EEA にお住まいのユ�
 
 # Privacy Policy
 
-Last Updated: May 12, 2026
+Last Updated: June 4, 2026
 
 Thank you for using DeVS (the "App"). This Privacy Policy explains how information is handled in the App.
 
@@ -146,12 +147,12 @@ We use RevenueCat to manage subscription status and verify purchase receipts. On
 
 | Information | Storage Location |
 |-------------|-----------------|
-| Discussion history | Device only (AsyncStorage) |
+| Discussion history | Device (AsyncStorage). Also stored in Apple iCloud's private database (CloudKit) if "iCloud Sync" is enabled in Settings |
 | App settings | Device only (AsyncStorage) |
-| Custom agents | Device only (AsyncStorage) |
+| Custom agents | Device (AsyncStorage). Also stored in Apple iCloud's private database (CloudKit) if "iCloud Sync" is enabled in Settings |
 | Usage counts | Device only (AsyncStorage) |
 
-We do not store personal user data on our own servers.
+We do not store personal user data on our own servers. "iCloud Sync" is an optional feature and is disabled by default. When you enable iCloud Sync, the handling of synced data is governed by Apple's Privacy Policy.
 
 ## 3. Third-Party Services
 
@@ -164,6 +165,7 @@ The App uses the following third-party services. Please review their respective 
 | Supabase | API communication relay | https://supabase.com/privacy |
 | Apple In-App Purchase | Subscription and ticket purchase processing | https://www.apple.com/legal/privacy/ |
 | RevenueCat | Subscription status management and receipt validation | https://www.revenuecat.com/privacy |
+| Apple iCloud (CloudKit) | Cross-device sync of discussion history and custom agents (optional feature — only when the user enables it in Settings) | https://www.apple.com/legal/privacy/ |
 
 ## 4. Children's Privacy
 
