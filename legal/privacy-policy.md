@@ -1,6 +1,6 @@
 # プライバシーポリシー
 
-最終更新日: 2026年6月4日
+最終更新日: 2026年10月19日
 
 DeVS（以下「本アプリ」）をご利用いただきありがとうございます。本プライバシーポリシーは、本アプリにおける情報の取り扱いについて説明するものです。
 
@@ -9,15 +9,20 @@ DeVS（以下「本アプリ」）をご利用いただきありがとうござ�
 ### 1.1 ユーザーが入力する情報
 - ディスカッションのテーマ（トピック）
 - カスタムエージェントの設定情報（名前、専門分野、ペルソナ）
+- 議論中に入力した質問、議論の前に書いた意見（入力した場合のみ）
 
 これらの情報は**端末内（ローカルストレージ）にのみ保存**されます。当社のサーバーにユーザーデータを保存することはありません。
 
 ### 1.2 AI応答の生成に使用する情報
-ディスカッション機能を利用する際、入力されたテーマとエージェント設定は、AI応答を生成するために Anthropic 社の Claude API に送信されます。この通信は当社の Supabase Edge Function を経由して行われます。
+ディスカッション機能を利用する際、入力された情報は、AI応答を生成するために以下の AI サービスのいずれか、または複数に送信されます。どのサービスに送信されるかは、ご利用のプラン、対決モード、設定で選んだ AI によって決まります。この通信は当社の Supabase Edge Function を経由して行われます。
 
-- 送信される情報: ディスカッションのテーマ、エージェントのペルソナ設定、会話履歴
-- 送信先: Anthropic 社 Claude API（Supabase Edge Function 経由）
-- Anthropic 社のプライバシーポリシー: https://www.anthropic.com/privacy
+- 送信される情報: ディスカッションのテーマ、エージェントのペルソナ設定、会話履歴、議論中に入力した質問・議論の前に書いた意見（入力した場合のみ）
+- 送信先:
+  - Anthropic 社（Claude API）: https://www.anthropic.com/privacy
+  - OpenAI 社（OpenAI API）: https://openai.com/policies/privacy-policy
+  - Google 社（Gemini API）: https://policies.google.com/privacy
+
+送信される情報に、氏名やメールアドレスなど、ユーザーを直接特定する情報は含まれません。ただし、テーマ・質問・意見などに個人情報を書いた場合は、その内容がそのまま送信されます。個人情報は入力しないでください。
 
 ### 1.3 広告に関する情報
 本アプリは Google AdMob を使用して広告を表示します。AdMob は広告配信のために以下の情報を収集する場合があります。
@@ -54,11 +59,13 @@ DeVS（以下「本アプリ」）をご利用いただきありがとうござ�
 | サービス | 用途 | プライバシーポリシー |
 |----------|------|----------------------|
 | Anthropic Claude API | AI応答の生成 | https://www.anthropic.com/privacy |
+| OpenAI API | AI応答の生成 | https://openai.com/policies/privacy-policy |
+| Google Gemini API | AI応答の生成 | https://policies.google.com/privacy |
 | Google AdMob | 広告の表示 | https://policies.google.com/privacy |
 | Supabase | API通信の中継 | https://supabase.com/privacy |
 | Apple In-App Purchase | サブスクリプション・チケット課金処理 | https://www.apple.com/legal/privacy/ |
 | RevenueCat | 課金状態管理・レシート検証 | https://www.revenuecat.com/privacy |
-| Apple iCloud (CloudKit) | ディスカッション履歴・カスタムエージェントの装置間同期（任意機能・ユーザーが設定画面で有効化した場合のみ） | https://www.apple.com/legal/privacy/ |
+| Apple iCloud (CloudKit) | ディスカッション履歴・カスタムエージェントの他の端末との同期（任意機能・ユーザーが設定画面で有効化した場合のみ） | https://www.apple.com/legal/privacy/ |
 
 ## 4. 子どものプライバシー
 
@@ -107,7 +114,7 @@ EU一般データ保護規則（GDPR）に基づき、EEA にお住まいのユ�
 
 # Privacy Policy
 
-Last Updated: June 4, 2026
+Last Updated: October 19, 2026
 
 Thank you for using DeVS (the "App"). This Privacy Policy explains how information is handled in the App.
 
@@ -116,15 +123,20 @@ Thank you for using DeVS (the "App"). This Privacy Policy explains how informati
 ### 1.1 Information You Provide
 - Discussion topics
 - Custom agent settings (name, specialty, persona)
+- Questions you enter during a discussion and the opinion you write before it (only if you enter them)
 
 This information is stored **only on your device (local storage)**. We do not store user data on our servers.
 
 ### 1.2 Information Used for AI Responses
-When using the discussion feature, the topic and agent settings are sent to Anthropic's Claude API to generate AI responses. This communication is routed through our Supabase Edge Function.
+When using the discussion feature, the information you enter is sent to one or more of the following AI services to generate AI responses. Which services receive it depends on your plan, the battle mode, and the AI you choose in Settings. This communication is routed through our Supabase Edge Function.
 
-- Information sent: Discussion topic, agent persona settings, conversation history
-- Destination: Anthropic Claude API (via Supabase Edge Function)
-- Anthropic's Privacy Policy: https://www.anthropic.com/privacy
+- Information sent: Discussion topic, agent persona settings, conversation history, and the questions you enter during a discussion or the opinion you write before it (only if you enter them)
+- Destinations:
+  - Anthropic (Claude API): https://www.anthropic.com/privacy
+  - OpenAI (OpenAI API): https://openai.com/policies/privacy-policy
+  - Google (Gemini API): https://policies.google.com/privacy
+
+The information sent does not include anything that directly identifies you, such as your name or email address. However, if you write personal information in a topic, question, or opinion, that text is sent as written. Please do not enter personal information.
 
 ### 1.3 Advertising Information
 The App uses Google AdMob to display advertisements. AdMob may collect the following information for ad delivery:
@@ -161,6 +173,8 @@ The App uses the following third-party services. Please review their respective 
 | Service | Purpose | Privacy Policy |
 |---------|---------|---------------|
 | Anthropic Claude API | AI response generation | https://www.anthropic.com/privacy |
+| OpenAI API | AI response generation | https://openai.com/policies/privacy-policy |
+| Google Gemini API | AI response generation | https://policies.google.com/privacy |
 | Google AdMob | Ad delivery | https://policies.google.com/privacy |
 | Supabase | API communication relay | https://supabase.com/privacy |
 | Apple In-App Purchase | Subscription and ticket purchase processing | https://www.apple.com/legal/privacy/ |
